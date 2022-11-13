@@ -1,3 +1,9 @@
+/*
+Problem:
+
+
+*/
+
 type Whitespace = " " | "\n" | "\t";
 type Trim<S extends string> = S extends ` ${infer R}` ? Trim<R> :
                               S extends `${infer R} ` ? Trim<R> :
